@@ -1,0 +1,182 @@
+[
+  {
+    "chunk": 512,
+    "id": "P1",
+    "categoria": "Orçamento",
+    "user_input": "O que é um orçamento pessoal e para que ele serve?",
+    "response": "O orçamento pessoal ou familiar é o registro das receitas e despesas, tanto previstas quanto realizadas, de uma pessoa ou família [2]. Ele serve para identificar a situação do orçamento, que pode ser deficitário (despesas maiores que receitas), neutro (iguais) ou superavitário (despesas menores que receitas) [1]. A meta básica desse controle é manter o orçamento superavitário [1].",
+    "retrieved_contexts": [
+      "particulares); despesas fixas (aluguel, prestação) e variáveis (luz, água, conforme o consumo).\nSituações do orçamento: deficitário (despesas maiores que receitas), neutro (iguais) e superavitário\n(menores). Meta básica: manter o orçamento superavitário.\nPague-se primeiro: ao receber a renda, separar a parte da poupança antes de pagar as despesas, de\npreferência com investimento automático em data definida.\nFamília: o orçamento familiar funciona melhor quando todos participam. O caderno compara impor",
+      "DOC05 — Orçamento (SUSEP / Gov.br)\nCategoria: Orçamento pessoal | Uso no FinControl Assistant: orientações sobre elaboração e controle do\norçamento pessoal\nFonte: https://www.gov.br/susep/pt-br/assuntos/meu-futuro-seguro/educacao-financeira/orcamento-1\n(publicado em 15/09/2022, modificado em 05/10/2022). Resumo organizado, não é cópia literal.\n1. O que é o orçamento pessoal ou familiar\nÉ o registro das receitas e despesas, previstas e realizadas, de uma pessoa ou família.",
+      "Azul ou vermelho: se o orçamento está equilibrado e ainda não poupa, começar poupando 5% da\nreceita, subir para 10% e ampliar o percentual a cada 2 anos. Se está no vermelho, atacar os itens de\nmaior peso, envolver a família e priorizar o necessário.\nCusto de vida compatível: o equilíbrio do orçamento depende do nível de despesas, não da faixa de\nrenda.\nInflação: corrói o poder de compra; nos investimentos buscar taxa de juros real (acima da inflação)."
+    ],
+    "fontes": "DOC01_BCB_Caderno_Educacao_Financeira.pdf p.2; DOC05_SUSEP_Orcamento.pdf p.1; DOC02_CVM_TOP_Planejamento_Financeiro_Pessoal.pdf p.2",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 479.0
+  },
+  {
+    "chunk": 512,
+    "id": "P2",
+    "categoria": "Receitas e despesas",
+    "user_input": "Qual a diferença entre despesas fixas e variáveis?",
+    "response": "As despesas fixas incluem gastos como aluguel, condomínio, plano de saúde, mensalidade escolar e prestação [1][2]. Já as despesas variáveis são aquelas como alimentação, transporte, telefone, luz e água, que variam conforme o consumo [1][2].",
+    "retrieved_contexts": [
+      "Despesas fixas (aluguel, condomínio, plano de saúde, mensalidade escolar) e variáveis\n(alimentação, transporte, telefone).",
+      "particulares); despesas fixas (aluguel, prestação) e variáveis (luz, água, conforme o consumo).\nSituações do orçamento: deficitário (despesas maiores que receitas), neutro (iguais) e superavitário\n(menores). Meta básica: manter o orçamento superavitário.\nPague-se primeiro: ao receber a renda, separar a parte da poupança antes de pagar as despesas, de\npreferência com investimento automático em data definida.\nFamília: o orçamento familiar funciona melhor quando todos participam. O caderno compara impor",
+      "para quitar dívidas, procurar os credores para negociar juros menores ou prazos maiores\n(assumindo só compromissos que possam ser cumpridos) e buscar renda extra.\n4. Pontos-chave para o assistente\n Fórmula base: Receitas – Despesas = Resultado.\n Classificação de receitas: fixas e variáveis. Classificação de despesas: fixas, variáveis e\neventuais.\n Meta de poupança de referência: 10% a 20% da receita.\n Reserva de emergência: mínimo de 2 meses de gastos, mais para renda instável."
+    ],
+    "fontes": "DOC02_CVM_TOP_Planejamento_Financeiro_Pessoal.pdf p.1; DOC01_BCB_Caderno_Educacao_Financeira.pdf p.2; DOC05_SUSEP_Orcamento.pdf p.2",
+    "acerto_fonte": false,
+    "contexto_medio_chars": 371.0
+  },
+  {
+    "chunk": 512,
+    "id": "P3",
+    "categoria": "Educação financeira",
+    "user_input": "Por que é importante ter educação financeira?",
+    "response": "A educação financeira é importante por ser um meio de promover comportamentos que melhoram o bem-estar financeiro das pessoas e o exercício da cidadania financeira [1].",
+    "retrieved_contexts": [
+      "até as modalidades de investimento). O módulo 6 (riscos, seguros e aposentadoria) e os exercícios não foram incluídos.\n1. Conceitos-base\nEducação financeira: meio de promover comportamentos que melhoram o exercício da cidadania\nfinanceira e o bem-estar financeiro das pessoas.\nCidadania financeira: exercício de direitos e deveres que permite ao cidadão gerenciar bem seus\nrecursos. Tem quatro dimensões: educação financeira, inclusão financeira, proteção ao consumidor de",
+      "DOC01 — Caderno de Educação Financeira: Gestão de\n Finanças Pessoais (BCB)\nInstituição: Banco Central do Brasil (BCB) | Categoria: Educação financeira | Uso no FinControl Assistant: conceitos de\neducação financeira e gestão das finanças pessoais.\nFonte: https://www.bcb.gov.br/cidadaniafinanceira/cidadania_biblioteca (PDF: Caderno de Educação Financeira, versão\n2026, 2ª edição revisada, 98 p.).\nResumo organizado, com palavras reformuladas; não é cópia literal. Cobertura: introdução e módulos 1 a 5 (módulo 5",
+      "DOC02 — TOP Planejamento Financeiro Pessoal (CVM /\n Planejar)\nInstituição: CVM / Portal do Investidor | Categoria: Planejamento financeiro | Uso no FinControl Assistant: orientações\nsobre planejamento financeiro pessoal.\nFonte: https://www.gov.br/investidor/pt-br/educacional/publicacoes-educacionais/livros-cvm/livro-top-planejamento-financ\neiro-pessoal/ (livro de 288 p., 1ª edição 2019; há 2ª edição de 2025)."
+    ],
+    "fontes": "DOC01_BCB_Caderno_Educacao_Financeira.pdf p.1; DOC01_BCB_Caderno_Educacao_Financeira.pdf p.1; DOC02_CVM_TOP_Planejamento_Financeiro_Pessoal.pdf p.1",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 465.0
+  },
+  {
+    "chunk": 512,
+    "id": "P4",
+    "categoria": "Planejamento financeiro",
+    "user_input": "Quais são as etapas para fazer um planejamento financeiro pessoal?",
+    "response": "O planejamento financeiro é um processo que auxilia pessoas e famílias a organizar a vida financeira através de estratégias para alcançar objetivos de vida [3]. O guia de planejamento é dividido em 6 passos, sendo que o primeiro passo consiste em calcular o seu patrimônio [3]. Além disso, a gestão financeira é considerada o primeiro passo para atingir esses objetivos [1].",
+    "retrieved_contexts": [
+      "meio de estratégias para atingir objetivos de vida. A gestão financeira é o primeiro passo.\nCapítulos: 1 Gestão Financeira; 2 Investimentos; 3 Planejamento da Aposentadoria; 4 Gestão de\nRiscos e Seguros; 5 Tributos sobre Rendimentos e Investimentos; 6 Sucessão Patrimonial; 7\nPlanejamento Financeiro Integrado (inclui o papel do planejador e a certificação CFP).\n2. Problemas financeiros mais comuns\nNão planejar; gastar demais (quem poupa costuma poupar menos de 5% da renda líquida); usar",
+      "financeiro (imóveis, com custos e riscos). Apostas, bets e loterias não são investimento. Criptoativos\nnão são emitidos nem garantidos pelo BC e têm grande volatilidade.",
+      "1. Introdução\nPlanejamento financeiro é um processo que ajuda pessoas e famílias a organizar a vida financeira por\nmeio de estratégias para atingir objetivos de vida. O guia é dividido em 6 passos; cada um traz a seção\n'Faça agora', pontos importantes, ideias para pensar e o que esperar. A forma de registrar (caderno,\nplanilha, aplicativo) importa menos que fazer o planejamento.\n2. Passo 1 – Calcule o seu patrimônio"
+    ],
+    "fontes": "DOC02_CVM_TOP_Planejamento_Financeiro_Pessoal.pdf p.1; DOC01_BCB_Caderno_Educacao_Financeira.pdf p.4; DOC03_CVM_Guia_Planejamento_Financeiro.pdf p.1",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 359.3333333333333
+  },
+  {
+    "chunk": 512,
+    "id": "P5",
+    "categoria": "Reserva financeira",
+    "user_input": "Quanto dinheiro devo ter separado para imprevistos?",
+    "response": "Para imprevistos, deve-se ter um fundo de emergência com tamanho estimado de 3 a 6 meses das despesas correntes [3]. Por exemplo, se as despesas mensais forem de R$ 10.000, o valor necessário seria de R$ 30.000 a R$ 60.000 [3]. Quem não possui esse valor pode começar com a quantia que for possível [3].",
+    "retrieved_contexts": [
+      "dinheiro necessários e pesquisando investimentos adequados.",
+      "particulares); despesas fixas (aluguel, prestação) e variáveis (luz, água, conforme o consumo).\nSituações do orçamento: deficitário (despesas maiores que receitas), neutro (iguais) e superavitário\n(menores). Meta básica: manter o orçamento superavitário.\nPague-se primeiro: ao receber a renda, separar a parte da poupança antes de pagar as despesas, de\npreferência com investimento automático em data definida.\nFamília: o orçamento familiar funciona melhor quando todos participam. O caderno compara impor",
+      "6. Fundo de emergência\nServe para cobrir despesas, no mínimo as necessárias, quando a renda cessa (desemprego, invalidez,\nmorte do provedor) ou surgem imprevistos. Tamanho estimado: de 3 a 6 meses das despesas\ncorrentes. Exemplo: despesas de R$ 10.000 por mês pedem de R$ 30.000 a R$ 60.000. Quem não\ntem pode começar com o que for possível. Se usar, recompor o quanto antes.\nOnde aplicar: priorizar liquidez imediata e baixo risco; a rentabilidade perde importância. Opções"
+    ],
+    "fontes": "DOC05_SUSEP_Orcamento.pdf p.1; DOC01_BCB_Caderno_Educacao_Financeira.pdf p.2; DOC02_CVM_TOP_Planejamento_Financeiro_Pessoal.pdf p.2",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 346.0
+  },
+  {
+    "chunk": 512,
+    "id": "P6",
+    "categoria": "Receitas e despesas",
+    "user_input": "O que fazer quando as despesas são maiores que a receita?",
+    "response": "Para quitar dívidas, deve-se procurar os credores para negociar prazos maiores ou juros menores, assumindo apenas compromissos que possam ser cumpridos [3]. Além disso, recomenda-se buscar renda extra [3].",
+    "retrieved_contexts": [
+      "receitas maiores que as despesas. A página reconhece que o conceito parece óbvio, mas nem sempre\né fácil de aplicar no dia a dia.",
+      "receitas e despesas por pelo menos um mês, em grupos livres (habitação, alimentação, saúde,\ntransporte, educação, lazer). Calcular o resultado do mês e o acumulado do ano.\nLembrar: despesas não mensais (impostos, seguros, matrículas, sazonais), rendas extras anuais (13º\nsalário, férias) e parcelas de empréstimos e financiamentos. Restituição e pagamento de Imposto de\nRenda podem entrar como receita ou despesa anual. Sugestão: subdividir em essenciais, não\nessenciais, investimentos e financiamentos.",
+      "para quitar dívidas, procurar os credores para negociar juros menores ou prazos maiores\n(assumindo só compromissos que possam ser cumpridos) e buscar renda extra.\n4. Pontos-chave para o assistente\n Fórmula base: Receitas – Despesas = Resultado.\n Classificação de receitas: fixas e variáveis. Classificação de despesas: fixas, variáveis e\neventuais.\n Meta de poupança de referência: 10% a 20% da receita.\n Reserva de emergência: mínimo de 2 meses de gastos, mais para renda instável."
+    ],
+    "fontes": "DOC04_CAIXA_Receitas_e_Despesas.pdf p.1; DOC03_CVM_Guia_Planejamento_Financeiro.pdf p.1; DOC05_SUSEP_Orcamento.pdf p.2",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 372.6666666666667
+  },
+  {
+    "chunk": 1024,
+    "id": "P1",
+    "categoria": "Orçamento",
+    "user_input": "O que é um orçamento pessoal e para que ele serve?",
+    "response": "O orçamento pessoal ou familiar é o registro das receitas e despesas, tanto previstas quanto realizadas, de uma pessoa ou família [1]. Ele serve como uma radiografia das finanças, mostrando todos os ganhos e gastos para ajudar a avaliar a saúde financeira [1]. Além disso, é o primeiro passo de um planejamento financeiro eficiente, tendo como ideia central gastar menos do que se ganha [1].",
+    "retrieved_contexts": [
+      "DOC05 — Orçamento (SUSEP / Gov.br)\nCategoria: Orçamento pessoal | Uso no FinControl Assistant: orientações sobre elaboração e controle do\norçamento pessoal\nFonte: https://www.gov.br/susep/pt-br/assuntos/meu-futuro-seguro/educacao-financeira/orcamento-1\n(publicado em 15/09/2022, modificado em 05/10/2022). Resumo organizado, não é cópia literal.\n1. O que é o orçamento pessoal ou familiar\nÉ o registro das receitas e despesas, previstas e realizadas, de uma pessoa ou família.\nFunciona como uma radiografia das finanças: mostra todos os ganhos e todos os gastos e\najuda a avaliar a saúde financeira. A ideia central da página é gastar menos do que se ganha.\nElaborar o orçamento é o primeiro passo de um planejamento financeiro eficiente. Pode ser\nfeito em caderno, aplicativo ou site.\n2. Passo a passo\nPasso 1 – Definir o período. Diário, mensal ou misto. Se a renda é mensal, o orçamento\nideal é mensal, mas gastos diários podem ser anotados por dia e somados no total mensal.",
+      "o valor mensal no orçamento (passo 6).\n6. Passo 5 – Organize seus objetivos e sonhos\nListar objetivos de curto, médio e longo prazo (imóvel, móveis, estudos, viagens, carro), estimando\nvalor, prazo e reserva mensal necessária. Considerar inflação, usar índices de fontes confiáveis,\nestimar em reais objetivos em moeda estrangeira e ser prudente com juros reais.\nSe a reserva mensal estimada for alta demais, rever prioridades e prazos. Escolher aplicações\ncompatíveis com o prazo: objetivo de curto prazo não vai em aplicação indicada para longo prazo.\n7. Passo 6 – Junte todas as peças (orçamento doméstico)\nOrçamento é uma estimativa de receitas e despesas de um período futuro. Montar uma tabela com\nreceitas, despesas e reservas (emergência, aposentadoria, objetivos) estimadas nos passos\nanteriores, com prazo definido (5, 10 ou 30 anos conforme a idade). Analisar receitas menos despesas\ne decidir: eliminar despesas, ajustar, priorizar objetivos e definir metas.",
+      "Azul ou vermelho: se o orçamento está equilibrado e ainda não poupa, começar poupando 5% da\nreceita, subir para 10% e ampliar o percentual a cada 2 anos. Se está no vermelho, atacar os itens de\nmaior peso, envolver a família e priorizar o necessário.\nCusto de vida compatível: o equilíbrio do orçamento depende do nível de despesas, não da faixa de\nrenda.\nInflação: corrói o poder de compra; nos investimentos buscar taxa de juros real (acima da inflação).\nVieses de consumo: efeito adesão (comportamento de manada), efeito halo, falácia dos custos\nirrecuperáveis, ilusão de controle e viés do ponto cego. Para cada um o livro sugere pesquisar,\ncomparar, definir limites e evitar decidir sob pressão ou fragilidade emocional.\n5. Capacidade de poupança\nVieses do poupador: status quo, falácia do planejamento, crescimento exponencial (dificuldade de\nentender juros compostos), otimismo, e viés do presente. Estratégias: começar com valores pequenos,"
+    ],
+    "fontes": "DOC05_SUSEP_Orcamento.pdf p.1; DOC03_CVM_Guia_Planejamento_Financeiro.pdf p.2; DOC02_CVM_TOP_Planejamento_Financeiro_Pessoal.pdf p.2",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 965.3333333333334
+  },
+  {
+    "chunk": 1024,
+    "id": "P2",
+    "categoria": "Receitas e despesas",
+    "user_input": "Qual a diferença entre despesas fixas e variáveis?",
+    "response": "As despesas fixas são exemplos como aluguel, condomínio, plano de saúde e mensalidade escolar [3]. Já as despesas variáveis incluem gastos com alimentação, transporte e telefone [3].",
+    "retrieved_contexts": [
+      "esporádicos; rendimentos fixos de fontes diversas, como aposentadoria ou pensão; rendimentos de\naluguéis ou dividendos de ações.\n2. Despesas\nDespesa é aquilo que se gasta. Para calcular, incluir as grandes despesas (moradia, alimentação,\ntransporte, saúde e lazer) e também os pequenos gastos do dia a dia, que muitas vezes ficam de fora.\n3. Ideia central\nO primeiro passo para cuidar melhor do dinheiro é gastar menos do que se ganha, ou seja, fazer as\nreceitas maiores que as despesas. A página reconhece que o conceito parece óbvio, mas nem sempre\né fácil de aplicar no dia a dia.",
+      "Resultado nulo ou quase nulo. Envolver toda a família, deixar claros os planos com valores\ne prazos, examinar todas as despesas para reduzir cortes possíveis e considerar renda extra\n(venda de produtos caseiros, revenda de mercadorias, prestação de serviços).\nResultado negativo (sinal vermelho). O primeiro objetivo é sair do vermelho. Reconhecer a\nsituação e conversar com a família, rever e cortar despesas, calcular quanto é possível pagar\npara quitar dívidas, procurar os credores para negociar juros menores ou prazos maiores\n(assumindo só compromissos que possam ser cumpridos) e buscar renda extra.\n4. Pontos-chave para o assistente\n Fórmula base: Receitas – Despesas = Resultado.\n Classificação de receitas: fixas e variáveis. Classificação de despesas: fixas, variáveis e\neventuais.\n Meta de poupança de referência: 10% a 20% da receita.\n Reserva de emergência: mínimo de 2 meses de gastos, mais para renda instável.\n Horizontes de planejamento: curto (1–2 anos), médio (3–9 anos), longo (10+ anos).",
+      "regulares. Usar valores líquidos de impostos e encargos.\nDespesas fixas (aluguel, condomínio, plano de saúde, mensalidade escolar) e variáveis\n(alimentação, transporte, telefone)."
+    ],
+    "fontes": "DOC04_CAIXA_Receitas_e_Despesas.pdf p.1; DOC05_SUSEP_Orcamento.pdf p.2; DOC02_CVM_TOP_Planejamento_Financeiro_Pessoal.pdf p.1",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 592.0
+  },
+  {
+    "chunk": 1024,
+    "id": "P3",
+    "categoria": "Educação financeira",
+    "user_input": "Por que é importante ter educação financeira?",
+    "response": "A educação financeira é importante por ser um meio de promover comportamentos que melhoram o bem-estar financeiro das pessoas e o exercício da cidadania financeira [1]. A cidadania financeira, por sua vez, consiste no exercício de direitos e deveres que permitem ao cidadão gerenciar bem seus recursos [1].",
+    "retrieved_contexts": [
+      "DOC01 — Caderno de Educação Financeira: Gestão de\n Finanças Pessoais (BCB)\nInstituição: Banco Central do Brasil (BCB) | Categoria: Educação financeira | Uso no FinControl Assistant: conceitos de\neducação financeira e gestão das finanças pessoais.\nFonte: https://www.bcb.gov.br/cidadaniafinanceira/cidadania_biblioteca (PDF: Caderno de Educação Financeira, versão\n2026, 2ª edição revisada, 98 p.).\nResumo organizado, com palavras reformuladas; não é cópia literal. Cobertura: introdução e módulos 1 a 5 (módulo 5\naté as modalidades de investimento). O módulo 6 (riscos, seguros e aposentadoria) e os exercícios não foram incluídos.\n1. Conceitos-base\nEducação financeira: meio de promover comportamentos que melhoram o exercício da cidadania\nfinanceira e o bem-estar financeiro das pessoas.\nCidadania financeira: exercício de direitos e deveres que permite ao cidadão gerenciar bem seus\nrecursos. Tem quatro dimensões: educação financeira, inclusão financeira, proteção ao consumidor de",
+      "recursos. Tem quatro dimensões: educação financeira, inclusão financeira, proteção ao consumidor de\nserviços financeiros e participação cidadã.\nBem-estar financeiro: estado em que a pessoa paga suas contas, tem reserva para despesas\ninesperadas, guarda dinheiro para realizar projetos e se sente segura e satisfeita com sua vida\nfinanceira.\nTrês situações financeiras: (1) em dificuldade: endividado e sem reserva; (2) em equilíbrio/instável:\npaga as contas, mas não tem reserva; (3) financeiramente saudável: paga as contas, tem reserva e\nrealiza projetos.\nSeis competências do caderno: boa gestão do dinheiro, planejamento financeiro (orçamento), uso\ninteligente do crédito, consumo consciente, poupar para o futuro e entendimento do mercado (juros).\n2. Módulo 1 – Nossa relação com o dinheiro\nSonhos e projetos: sonho é o desejo; projeto é o sonho colocado no papel, com início e fim, etapas e\ncontrole. Passos para transformar sonho em projeto: (1) definir exatamente o objetivo; (2) estabelecer",
+      "DOC03 — Guia CVM de Planejamento Financeiro\nInstituição: CVM / Portal do Investidor | Categoria: Planejamento financeiro | Uso no FinControl Assistant: apoio à\nelaboração de planejamento financeiro.\nFonte: https://www.gov.br/investidor/pt-br/educacional/publicacoes-educacionais/guias/guia-de-planejamento-financeiro\n(guia de 16 p., 1ª edição, dezembro de 2014; o portal também oferece uma planilha modelo).\nResumo organizado, com palavras reformuladas; não é cópia literal. Cobertura: guia completo.\n1. Introdução\nPlanejamento financeiro é um processo que ajuda pessoas e famílias a organizar a vida financeira por\nmeio de estratégias para atingir objetivos de vida. O guia é dividido em 6 passos; cada um traz a seção\n'Faça agora', pontos importantes, ideias para pensar e o que esperar. A forma de registrar (caderno,\nplanilha, aplicativo) importa menos que fazer o planejamento.\n2. Passo 1 – Calcule o seu patrimônio\nObjetivo: descobrir o patrimônio líquido atual. Listar em ativos todos os bens e direitos (casa,"
+    ],
+    "fontes": "DOC01_BCB_Caderno_Educacao_Financeira.pdf p.1; DOC01_BCB_Caderno_Educacao_Financeira.pdf p.1; DOC03_CVM_Guia_Planejamento_Financeiro.pdf p.1",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 1000.0
+  },
+  {
+    "chunk": 1024,
+    "id": "P4",
+    "categoria": "Planejamento financeiro",
+    "user_input": "Quais são as etapas para fazer um planejamento financeiro pessoal?",
+    "response": "O planejamento financeiro é um processo para organizar a vida financeira através de estratégias para atingir objetivos de vida, sendo a gestão financeira o primeiro passo [3]. Para transformar sonhos em projetos, deve-se definir exatamente o objetivo e estabelecer etapas e controle, com início e fim [2]. Além disso, recomenda-se a elaboração de um balanço patrimonial (Ativos – Passivos) para ter a foto da situação patrimonial, refazendo-o ao menos uma vez por ano [1].",
+    "retrieved_contexts": [
+      "meio de estratégias para atingir objetivos de vida. A gestão financeira é o primeiro passo.\nCapítulos: 1 Gestão Financeira; 2 Investimentos; 3 Planejamento da Aposentadoria; 4 Gestão de\nRiscos e Seguros; 5 Tributos sobre Rendimentos e Investimentos; 6 Sucessão Patrimonial; 7\nPlanejamento Financeiro Integrado (inclui o papel do planejador e a certificação CFP).\n2. Problemas financeiros mais comuns\nNão planejar; gastar demais (quem poupa costuma poupar menos de 5% da renda líquida); usar\ncrédito para consumo (usar crédito só para bens que constroem patrimônio ou reduzem despesas,\ncomo financiamento imobiliário); achar cedo para pensar na aposentadoria (poupar cerca de 10% da\nrenda); cair em ofertas 'imperdíveis'; assumir riscos elevados sem seguro e sem reserva; decidir com\nbase na emoção; focar demais no dinheiro.\n3. Balanço patrimonial\nFoto da situação patrimonial em um momento. Refazer ao menos uma vez por ano (a época do\nImposto de Renda é boa para isso). Patrimônio líquido = Ativos – Passivos.",
+      "recursos. Tem quatro dimensões: educação financeira, inclusão financeira, proteção ao consumidor de\nserviços financeiros e participação cidadã.\nBem-estar financeiro: estado em que a pessoa paga suas contas, tem reserva para despesas\ninesperadas, guarda dinheiro para realizar projetos e se sente segura e satisfeita com sua vida\nfinanceira.\nTrês situações financeiras: (1) em dificuldade: endividado e sem reserva; (2) em equilíbrio/instável:\npaga as contas, mas não tem reserva; (3) financeiramente saudável: paga as contas, tem reserva e\nrealiza projetos.\nSeis competências do caderno: boa gestão do dinheiro, planejamento financeiro (orçamento), uso\ninteligente do crédito, consumo consciente, poupar para o futuro e entendimento do mercado (juros).\n2. Módulo 1 – Nossa relação com o dinheiro\nSonhos e projetos: sonho é o desejo; projeto é o sonho colocado no papel, com início e fim, etapas e\ncontrole. Passos para transformar sonho em projeto: (1) definir exatamente o objetivo; (2) estabelecer",
+      "DOC02 — TOP Planejamento Financeiro Pessoal (CVM /\n Planejar)\nInstituição: CVM / Portal do Investidor | Categoria: Planejamento financeiro | Uso no FinControl Assistant: orientações\nsobre planejamento financeiro pessoal.\nFonte: https://www.gov.br/investidor/pt-br/educacional/publicacoes-educacionais/livros-cvm/livro-top-planejamento-financ\neiro-pessoal/ (livro de 288 p., 1ª edição 2019; há 2ª edição de 2025).\nResumo organizado, com palavras reformuladas; não é cópia literal. Cobertura: apresentação, capítulo 1 (Gestão\nFinanceira) completo e início do capítulo 2 (princípios de investimento). Os demais capítulos não foram incluídos:\ninvestimentos (restante), aposentadoria, riscos e seguros, tributos, sucessão e planejamento integrado.\n1. Visão geral do livro\nPlanejamento financeiro é um processo que ajuda pessoas e famílias a organizar a vida financeira por\nmeio de estratégias para atingir objetivos de vida. A gestão financeira é o primeiro passo."
+    ],
+    "fontes": "DOC02_CVM_TOP_Planejamento_Financeiro_Pessoal.pdf p.1; DOC01_BCB_Caderno_Educacao_Financeira.pdf p.1; DOC02_CVM_TOP_Planejamento_Financeiro_Pessoal.pdf p.1",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 989.6666666666666
+  },
+  {
+    "chunk": 1024,
+    "id": "P5",
+    "categoria": "Reserva financeira",
+    "user_input": "Quanto dinheiro devo ter separado para imprevistos?",
+    "response": "Para a reserva de emergência, deve-se calcular o custo de vida de 6 a 12 meses, somando-se as despesas contratadas (como empréstimos e financiamentos) para esse mesmo período [2]. Por prudência, o guia indica a reserva de 12 meses de custo de vida [2].",
+    "retrieved_contexts": [
+      "e decidir: eliminar despesas, ajustar, priorizar objetivos e definir metas.\nAcompanhar registrando o realizado e comparando com o previsto, com ajustes quando necessário.\nPara o ano corrente e o seguinte, manter periodicidade mensal. Lembrar da inflação e das receitas\nsazonais (13º, férias).\nDicas: economizar em despesas essenciais (água, luz, telefone, TV); não comprar por impulso; evitar\nparcelamentos e financiamentos desnecessários (juros dificultam seguir o orçamento); buscar\ninformação sobre investimentos para cada objetivo; conversar com a família. Depois de atingido o valor\nda reserva de emergência, ela é mantida e não exige mais depósitos, liberando espaço para outras\nmetas.\n8. Conclusão\nInvestimentos devem se adequar a objetivos e perfil de risco. Reserva de emergência em baixo risco e\nresgate fácil; aposentadoria, no longo prazo, pode considerar o mercado de capitais para quem suporta\noscilações; reservas de conquistas dependem do prazo. Diversificar reduz riscos, e rentabilidade muito",
+      "Objetivo: saber se vive de acordo com suas condições ou gasta mais do que ganha. Anotar todas as\nreceitas e despesas por pelo menos um mês, em grupos livres (habitação, alimentação, saúde,\ntransporte, educação, lazer). Calcular o resultado do mês e o acumulado do ano.\nLembrar: despesas não mensais (impostos, seguros, matrículas, sazonais), rendas extras anuais (13º\nsalário, férias) e parcelas de empréstimos e financiamentos. Restituição e pagamento de Imposto de\nRenda podem entrar como receita ou despesa anual. Sugestão: subdividir em essenciais, não\nessenciais, investimentos e financiamentos.\nResultado: o quadro é o fluxo de caixa atual. Despesas acima das receitas = deficitário; receitas acima\ndas despesas = superavitário (tem capacidade de poupança).\n4. Passo 3 – Prepare-se para emergências\nReserva de emergência: calcular o custo de vida de 6 a 12 meses mais as despesas contratadas\n(empréstimos, financiamentos) nesse período. O guia indica, por prudência, 12 meses de custo de vida",
+      "Imposto de Renda é boa para isso). Patrimônio líquido = Ativos – Passivos.\nAtivos: bens e direitos a valor de mercado (para investimentos, valor líquido de taxas e impostos).\nDistinguir ativos de uso pessoal (casa, carro, que geram despesas) de ativos que geram renda\n(aplicações, imóveis alugados).\nPassivos: dívidas de curto prazo (vencimento em até 1 ano: rotativo, consignado, empréstimo pessoal,\ncrediário) e de longo prazo (financiamento imobiliário e de veículo).\n4. Orçamento e fluxo de caixa\nPague-se primeiro: ao receber, separar cerca de 20% da renda líquida para projetos (reserva, casa\nprópria, educação, aposentadoria, viagem). Depois pagar as despesas essenciais (moradia,\nalimentação, educação, saúde, transporte) e, por último, os gastos voluntários, onde os cortes devem\nacontecer.\nReceitas: salário, pró-labore e distribuição de lucros, aluguéis, rendimentos de aplicações e outras\nregulares. Usar valores líquidos de impostos e encargos."
+    ],
+    "fontes": "DOC03_CVM_Guia_Planejamento_Financeiro.pdf p.2; DOC03_CVM_Guia_Planejamento_Financeiro.pdf p.1; DOC02_CVM_TOP_Planejamento_Financeiro_Pessoal.pdf p.1",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 988.3333333333334
+  },
+  {
+    "chunk": 1024,
+    "id": "P6",
+    "categoria": "Receitas e despesas",
+    "user_input": "O que fazer quando as despesas são maiores que a receita?",
+    "response": "A ideia central para cuidar melhor do dinheiro é gastar menos do que se ganha, fazendo com que as receitas sejam maiores que as despesas [1]. Quando as despesas superam as receitas, o resultado é considerado deficitário [3]. Não encontrei nos documentos a informação sobre as ações específicas a serem tomadas para reverter essa situação.",
+    "retrieved_contexts": [
+      "esporádicos; rendimentos fixos de fontes diversas, como aposentadoria ou pensão; rendimentos de\naluguéis ou dividendos de ações.\n2. Despesas\nDespesa é aquilo que se gasta. Para calcular, incluir as grandes despesas (moradia, alimentação,\ntransporte, saúde e lazer) e também os pequenos gastos do dia a dia, que muitas vezes ficam de fora.\n3. Ideia central\nO primeiro passo para cuidar melhor do dinheiro é gastar menos do que se ganha, ou seja, fazer as\nreceitas maiores que as despesas. A página reconhece que o conceito parece óbvio, mas nem sempre\né fácil de aplicar no dia a dia.",
+      "ideal é mensal, mas gastos diários podem ser anotados por dia e somados no total mensal.\nPasso 2 – Listar as receitas. Anotar só o que se tem certeza de receber, sem contar com\nvalores incertos (gorjetas, gratificações). Receitas fixas: sempre presentes, valor estável\n(salário, aposentadoria, pensão, aluguéis recebidos). Receitas variáveis: esporádicas,\nvalores oscilam (rendimentos de investimentos, serviços prestados, vendas).\nPasso 3 – Listar todas as despesas. Incluir até os gastos pequenos (café, estacionamento,\nlanche escolar), guardando notas e recibos para não depender da memória. Despesas fixas:\nrepetem-se com valor fixo ou com pequena variação esperada (aluguel, condomínio,\nmensalidade escolar, plano de saúde, luz, água, gás). Despesas variáveis: repetem-se, mas\no valor muda bastante conforme o consumo (telefone, alimentação, lazer, combustível).\nDespesas eventuais ou extraordinárias: surgem por necessidade específica (farmácia,\nmaterial escolar, presentes, exames, viagens, emergências).",
+      "Objetivo: saber se vive de acordo com suas condições ou gasta mais do que ganha. Anotar todas as\nreceitas e despesas por pelo menos um mês, em grupos livres (habitação, alimentação, saúde,\ntransporte, educação, lazer). Calcular o resultado do mês e o acumulado do ano.\nLembrar: despesas não mensais (impostos, seguros, matrículas, sazonais), rendas extras anuais (13º\nsalário, férias) e parcelas de empréstimos e financiamentos. Restituição e pagamento de Imposto de\nRenda podem entrar como receita ou despesa anual. Sugestão: subdividir em essenciais, não\nessenciais, investimentos e financiamentos.\nResultado: o quadro é o fluxo de caixa atual. Despesas acima das receitas = deficitário; receitas acima\ndas despesas = superavitário (tem capacidade de poupança).\n4. Passo 3 – Prepare-se para emergências\nReserva de emergência: calcular o custo de vida de 6 a 12 meses mais as despesas contratadas\n(empréstimos, financiamentos) nesse período. O guia indica, por prudência, 12 meses de custo de vida"
+    ],
+    "fontes": "DOC04_CAIXA_Receitas_e_Despesas.pdf p.1; DOC05_SUSEP_Orcamento.pdf p.1; DOC03_CVM_Guia_Planejamento_Financeiro.pdf p.1",
+    "acerto_fonte": true,
+    "contexto_medio_chars": 864.0
+  }
+]

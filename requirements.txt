@@ -1,0 +1,15 @@
+langchain
+langchain-ollama
+langchain-classic
+tiktoken
+pydantic
+python-dotenv
+gradio
+langchain-community
+langchain-text-splitters
+chromadb
+langchain-chroma
+pypdf
+ollama
+datasets
+ragas

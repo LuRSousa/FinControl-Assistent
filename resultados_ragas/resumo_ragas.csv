@@ -1,0 +1,3 @@
+﻿configuracao;faithfulness_media;answer_relevancy_media;faithfulness_ge_0_7;fonte_esperada_recuperada;contexto_medio_chars;metricas_n_d;melhor_configuracao
+chunk 512;0,9722;0,8315;SIM;0,8333;398,8333;0;NÃO
+chunk 1024;1,0;0,6775;SIM;1,0;899,8889;0;SIM
