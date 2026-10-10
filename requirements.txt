@@ -5,7 +5,7 @@ tiktoken
 pydantic
 python-dotenv
 gradio
-langchain-community
+langchain-community==0.3.31
 langchain-text-splitters
 chromadb
 langchain-chroma
