@@ -135,7 +135,32 @@ Esse experimento pertence à etapa de memória conversacional do CKP01. Ele não
 
 ---
 
+## Notebooks disponíveis
+
+O projeto mantém duas formas de execução, com objetivos diferentes:
+
+- **Execução local:** utiliza o ambiente Python da máquina e os comandos descritos neste README.
+- **Google Colab:** notebook preparado para configurar o ambiente na nuvem, instalar as dependências, iniciar o Ollama, baixar `nomic-embed-text`, construir as coleções Chroma e executar a avaliação RAGAS.
+
+Notebook Colab: [`notebooks/CPK02_FinControlAssistent_Colab.ipynb`](notebooks/CPK02_FinControlAssistent_Colab.ipynb).
+
+Para abrir diretamente no Google Colab, use:
+[![Abrir no Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LuRSousa/FinControl-Assistent/blob/main/notebooks/CPK02_FinControlAssistent_Colab.ipynb)
+
+O notebook local existente deve ser mantido separado. O notebook do Colab automatiza a preparação do ambiente e não substitui os comandos de execução local. No Colab, configure `OLLAMA_API_KEY` em **Secrets**; não grave a chave no notebook.
+
+---
+
 ## Como executar o projeto
+
+### Executar no Google Colab
+
+1. Abra o [notebook do Colab](https://colab.research.google.com/github/LuRSousa/FinControl-Assistent/blob/main/notebooks/CPK02_FinControlAssistent_Colab.ipynb).
+2. Configure `OLLAMA_API_KEY` em **Secrets** do Colab e permita que o notebook acesse o segredo.
+3. Execute as células em ordem, ou use **Ambiente de execução → Executar tudo**.
+4. Aguarde a instalação do Ollama, o download de `nomic-embed-text`, a criação das coleções vetoriais e a avaliação RAGAS.
+
+Após reiniciar ou excluir o ambiente de execução, o Colab perde os modelos baixados e os processos em execução; por isso, é necessário executar novamente as células de preparação. A célula de inicialização inicia o servidor Ollama, e a etapa de embeddings verifica a disponibilidade do modelo local.
 
 ### 1. Preparar o ambiente
 
@@ -275,10 +300,12 @@ CKP02_FinControlAssistant_equipe01/
 │       ├── Historico.py        # Schema de validação do histórico
 │       └── Transacao.py        # Schema de validação de transações
 │
+├── notebooks/                  # Notebooks auxiliares e execução no Colab
+│   └── CPK02_FinControlAssistent_Colab.ipynb
 ├── data/                       # Base documental do projeto
 ├── resultados_ragas/           # Resultados do avaliacao_ragas.py
 ├── app/
-│   └── CPK02_DocMind_RAG.ipynb
+│   └── CPK02_DocMind_RAG.ipynb  # Notebook local existente
 ├── .env.example
 ├── requirements.txt
 └── README.md
@@ -418,10 +445,10 @@ Os resultados foram organizados em duas planilhas: uma com os registros individu
 
 | ID | Categoria | Pergunta | Faith. 512 | Faith. 1024 | Relev. 512 | Relev. 1024 |
 | --- | --- | --- | --- | --- | --- | --- |
-| P1 | Orçamento | O que é um orçamento pessoal e para que ele serve? | 0.83 | 1.00 | 0.74 | 0.87 |
-| P2 | Receitas e despesas | Qual a diferença entre despesas fixas e variáveis? | 1.00 | 1.00 | 0.95 | 0.89 |
-| P3 | Educação financeira | Por que é importante ter educação financeira? | 1.00 | 1.00 | 0.99 | 0.93 |
-| P4 | Planejamento financeiro | Quais são as etapas para fazer um planejamento financeiro pessoal? | 1.00 | 1.00 | 0.88 | 0.80 |
+| P1 | Orçamento | O que é um orçamento pessoal e para que ele serve? | 0.83 | 1.00 | 0.74 | 0.92 |
+| P2 | Receitas e despesas | Qual a diferença entre despesas fixas e variáveis? | 1.00 | 0.80 | 0.94 | 0.99 |
+| P3 | Educação financeira | Por que é importante ter educação financeira? | 1.00 | 1.00 | 0.99 | 0.91 |
+| P4 | Planejamento financeiro | Quais são as etapas para fazer um planejamento financeiro pessoal? | 1.00 | 1.00 | 0.84 | 0.80 |
 | P5 | Reserva financeira | Quanto dinheiro devo ter separado para imprevistos? | 1.00 | 1.00 | 0.78 | 0.58 |
 | P6 | Receitas e despesas | O que fazer quando as despesas são maiores que a receita? | 1.00 | 1.00 | 0.65 | 0.00 |
 
@@ -429,15 +456,15 @@ Os resultados foram organizados em duas planilhas: uma com os registros individu
 
 | Configuração | Faithfulness (média) | Answer relevancy (média) | Fonte esperada recuperada | Tamanho médio do contexto (chars) | Faithfulness ≥ 0,7? |
 | --- | --- | --- | --- | --- | --- |
-| chunk 512 | 0.97 | 0.83 | 83% | 399 | SIM |
-| chunk 1024 | 1.00 | 0.68 | 100% | 900 | SIM |
+| chunk 512 | 0.97 | 0.82 | 83% | 418 | SIM |
+| chunk 1024 | 0.97 | 0.70 | 100% | 855 | SIM |
 
 ### Configurações e contexto recuperado
 
 | Configuração   | Tamanho do chunk |        Overlap | Chunks recuperados (`k`) |
 | -------------- | ---------------: | -------------: | -----------------------: | 
-| Configuração A |   512 caracteres |  51 caracteres |                        3 | 
-| Configuração B |  1024 caracteres | 102 caracteres |                        3 | 
+| Configuração A |   512 caracteres |  51 caracteres |                        4 | 
+| Configuração B |  1024 caracteres | 102 caracteres |                        4 | 
 
 **Observação:** o overlap foi configurado em aproximadamente 10% do tamanho de cada chunk. A recuperação da fonte esperada indica se ao menos um dos documentos esperados para aquela pergunta apareceu entre os documentos recuperados; isso não substitui a avaliação de relevância semântica realizada pelo RAGAS.
 
@@ -446,13 +473,13 @@ Os resultados foram organizados em duas planilhas: uma com os registros individu
 
 ### Comparação das métricas
 
-A avaliação foi realizada com seis perguntas, utilizando três chunks recuperados por consulta (`k=3`) e comparando duas configurações de chunking: 512 e 1024 caracteres.
+A execução registrada no notebook do Colab avaliou seis perguntas, utilizando quatro chunks recuperados por consulta (`k=4`) e comparando duas configurações de chunking: 512 e 1024 caracteres.
 
 Ambas as configurações superaram o requisito mínimo de faithfulness de 0,70 e atingiram a referência de 0,90. Entretanto, os resultados mostram diferenças entre as configurações: o chunk 1024 apresentou maior faithfulness média, enquanto o chunk 512 obteve maior answer relevancy média.
 
 ### Análise crítica
 
-A configuração com chunks de 1024 apresentou faithfulness médio de 1,00 e recuperou a fonte esperada nas seis perguntas avaliadas. Apesar disso, sua answer relevancy média foi inferior à da configuração de 512 caracteres.
+Na execução registrada no notebook do Colab, as duas configurações apresentaram faithfulness médio de 0,97. A configuração de 1024 recuperou a fonte esperada nas seis perguntas avaliadas, mas sua answer relevancy média foi inferior à da configuração de 512 caracteres.
 
 Um caso relevante ocorreu na pergunta P6: “O que fazer quando as despesas são maiores que a receita?”. Com chunk 1024, a resposta explicou o significado de um resultado deficitário, mas não apresentou ações específicas para reverter a situação. Os contextos recuperados nessa configuração também não continham as orientações específicas que estavam disponíveis na recuperação com chunk 512. A answer relevancy dessa resposta foi avaliada em 0,00.
 
@@ -462,16 +489,16 @@ A recuperação da fonte esperada também deve ser interpretada como um indicado
 
 ### Escolha da configuração
 
-Com base nos resultados, adotamos provisoriamente chunks de 512 caracteres como configuração padrão do projeto. Essa escolha considera o equilíbrio entre faithfulness elevada (0,9722) e maior answer relevancy média (0,8315).
+Com base nos resultados registrados no notebook do Colab, adotamos provisoriamente chunks de 512 caracteres como configuração padrão do projeto. Essa escolha considera a faithfulness média de 0,97 e a maior answer relevancy média (0,82, contra 0,70 para chunks de 1024).
 
-A configuração de 1024 caracteres continua sendo uma alternativa válida, especialmente porque apresentou faithfulness de 1,00 e recuperou a fonte esperada em todas as perguntas avaliadas. No entanto, sua menor relevância média indica que fornecer mais contexto não garante, por si só, respostas mais adequadas à pergunta.
+A configuração de 1024 caracteres continua sendo uma alternativa válida, pois apresentou faithfulness média de 0,97 e recuperou a fonte esperada em todas as perguntas avaliadas. No entanto, sua menor relevância média indica que fornecer mais contexto não garante, por si só, respostas mais adequadas à pergunta.
 
 A escolha de 512 caracteres não representa uma superioridade em todas as métricas, mas uma decisão baseada no conjunto de resultados observados. Essa conclusão é provisória, pois a avaliação utilizou seis perguntas e o mesmo modelo, `gemma4:cloud`, tanto para gerar as respostas quanto para avaliar as métricas RAGAS.
 
 ### Limitações da avaliação
 
 * Foram avaliadas seis perguntas, o que limita a generalização dos resultados para outras consultas.
-* A recuperação utilizou `k=3`, isto é, até três trechos por pergunta.
+* A execução documentada no Colab utilizou `k=4`, isto é, até quatro trechos recuperados por pergunta.
 * O mesmo modelo foi utilizado na geração das respostas e no julgamento RAGAS, o que pode influenciar as pontuações.
 * A resposta P6 com chunk 1024 merece investigação adicional devido à baixa answer relevancy.
 
